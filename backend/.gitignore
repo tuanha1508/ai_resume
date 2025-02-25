@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+
+# Node.js (for React frontend)
+node_modules/
+dist/
+.tmp/
+.cache/
+
+# Environment files
+.env*
+!.env.example  # Keep an example file if needed
+
+# IDE Specific
+.vscode/
+.idea/
+.cursor/
+*.code-workspace
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# Logs and databases
+*.log
+*.sqlite
+
+# Build files
+build/
+dist/
+*.egg-info/
+
+# MongoDB (if using local DB)
+data/db/
