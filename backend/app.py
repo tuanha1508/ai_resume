@@ -14,7 +14,12 @@ load_dotenv()
 
 # Initialize Flask app
 app = Flask(__name__)
-CORS(app)  # Enable CORS for all routes
+CORS(app, resources={r"/*": {"origins": "http://localhost:5173"}})
+
+
+@app.route("/favicon.ico")
+def ignore_favicon():
+    return "", 204
 
 
 # Add JSON error handlers
